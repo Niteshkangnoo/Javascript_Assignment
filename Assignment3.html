@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<h1>JavaScript Assignment3 to display current date in mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy format</h1>
+		<p id="Sample"></p>
+        
+            <script>
+                var d = new Date();
+                document.getElementById("Sample").innerHTML = (d.getDate()+"-"+d.getDay()+"-"
+                +d.getFullYear()) + ","+" "+(d.getDate()+"/"+d.getDay()+"/"+d.getFullYear()) +" "+"or"+" "+ (d.getDay()+
+                "-"+d.getMonth()+"-"+d.getFullYear())+","+" "+(d.getDay()+
+                "/"+d.getMonth()+"/"+d.getFullYear());
+            </script>
+                  
+        </head>
+
+</html>
