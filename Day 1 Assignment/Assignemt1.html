@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<h1>JavaScript Assignment 1 to display current Date</h1>
+		<p>Today is: </p>
+
+		<p id="Sample"></p>
+		
+		<script>
+			var d = new Date();
+			var weekday = new Array(7);
+			  weekday[0] = "Sunday";
+			  weekday[1] = "Monday";
+			  weekday[2] = "Tuesday";
+			  weekday[3] = "Wednesday";
+			  weekday[4] = "Thursday";
+			  weekday[5] = "Friday";
+			  weekday[6] = "Saturday";
+			
+			  var n = weekday[d.getDay()];
+			  document.getElementById("Sample").innerHTML = n;
+			</script>
+
+	</head>
+<body>
+
+	<p>Current time is : </p>
+
+	<p id="Sample1"></p>
+	<script>
+		var t = new Date();
+		var hr = new Array(24);
+			  hr[1] = "1 AM";
+			  hr[2] = "2 AM";
+			  hr[3] = "3 AM";
+			  hr[4] = "4 AM";
+			  hr[5] = "5 AM";
+			  hr[6] = "6 AM";
+			  hr[7] = "7 AM";
+			  hr[8] = "8 AM";
+			  hr[9] = "9 AM";
+			  hr[10] = "10 AM";
+			  hr[11] = "11 AM";
+			  hr[12] = "12 PM";
+			  hr[13] = "1 PM";
+			  hr[14] = "2 PM";
+			  hr[15] = "3 PM";
+			  hr[16] = "4 PM";
+			  hr[17] = "5 PM";
+			  hr[18] = "6 PM";
+			  hr[19] = "7 PM";
+			  hr[20] = "8 PM";
+			  hr[21] = "9 PM";
+			  hr[22] = "10 PM";
+			  hr[23] = "11 PM";
+			  hr[0] = "12 AM";
+
+		var n1 = hr[t.getHours()];	  
+		document.getElementById("Sample1").innerHTML = n1+":"+t.getMinutes()+":"+t.getSeconds();
+		console.log("Program Ended Successfully");	
+	</script>
+
+</body>
+</html>
